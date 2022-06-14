@@ -1,0 +1,387 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 30px;
+  gap: 100px;
+  box-shadow: 6px 8px 16px 0px  rgba(0, 0, 0, 0.08);
+}
+.logo{
+  padding-right: 150px;
+}
+.logo h3{
+  font-family: 'Alfa Slab One', cursive;
+  
+  /* font-family: 'Ubuntu', sans-serif; */
+  
+  color: #000000;
+  font-weight: 300;
+  line-height: 40px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  /* display: block; */
+  
+  
+}
+.menu  a{
+  color:#000000;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  /* background-color: red; */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.2 linear;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.menu a:hover{
+  background-color: rgba(254, 217, 22, 1);
+  transition: all 0.2 linear;
+  color: white;
+}
+
+.product{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 40px;
+  /* background-color: red; */
+}
+.ct1 h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 100%;
+}
+.ct2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ct2 h5{
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:400;
+}
+.ct3{
+  /* background-color: red; */
+  width: 470px;
+}
+.ct3 p{
+  font-size: 20px;
+  color:  rgba(114, 114, 114, 1);
+  font-family:'Ubuntu', sans-serif;
+  padding-bottom: 20px;
+}
+
+.ct4 input{
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 6px 8px 16px 0px  rgba(0, 0, 0, 0.08);
+  
+}
+.ct4 input::placeholder{
+  font-family:'Ubuntu', sans-serif;
+  font-size: 15px;
+  color:  rgba(184, 184, 184, 1);
+}
+.ct4 button{
+  padding: 14px;
+  background-color:rgba(154, 210, 125, 1);
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(154, 210, 125, 1) ; 
+  font-family:'Ubuntu', sans-serif;
+  transition: all 0.3 linear;
+  line-height: 100%;
+}
+.ct4 button:hover{
+  background-color: rgb(158, 153, 153);
+  color: rgb(227, 227, 227);
+  transition: all 0.3 linear;
+}
+
+.ct5{
+ width: 400px;
+ /* padding-left: 100px; */
+ /* background-color: red; */
+ padding-top: 30px;
+ /* background-color: aqua; */
+}
+.ct5 img{
+  object-fit: cover;
+}
+.ct6 p{
+
+  font-family:'Ubuntu', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(136, 132, 132);
+}
+em{
+  color:  rgba(254, 217, 22, 1);
+  
+}
+.product2{
+  position: relative;
+}
+.box1{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: rgba(251, 227, 178, 1);
+  border-radius: 100%;
+  z-index: -1;
+  top:80px;
+  left: -30px;
+}
+.box2{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: rgba(251, 227, 178, 1);
+  border-radius: 100%;
+  z-index: -1;
+  background: rgba(210, 248, 255, 1);
+  bottom: 85px;
+  right: 10px;
+}
+.ct7 p{
+  font-size: 20px;
+  font-family:'Ubuntu', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  color: gray;
+  padding-block: 20px;
+}
+.em2{
+  color: rgba(154, 210, 125, 1);
+}
+
+/* Banner */
+
+.int4 {
+  position: relative;
+  height: 465px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.in4bkg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+}
+.in4conten {
+  width: 40%;
+  height: 40%;
+  transform: translate(20%, 30%);
+  position: absolute;
+  
+}
+.in4LoGo {
+  font-weight: bold;
+  padding-bottom: 5%;
+  font-size: 20px;
+  
+}
+.in4content1 p {
+  font-size: 15px;
+  font-weight: normal;
+}
+.in4content2 p {
+  font-size: 15px;
+  font-weight: normal;
+  padding-bottom: 5%;
+}
+.in4conten3 p {
+  font-size: 15px;
+  font-weight: normal;
+  padding-bottom: 5%;
+}
+.in4conten3 {
+  width: 45%;
+  height: 10%;
+  border-bottom: 2px solid black;
+}
+.sdt p {
+  font-size: 15px;
+  font-weight: normal;
+}
+.sdt {
+  padding-bottom: 5%;
+}
+.in5 {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  right: 0%;
+  top: 12%;
+
+}
+.in5_ct1{
+  padding-bottom:2%;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+}
+.in5_search input{
+  width: 60%;
+  border: 3px solid rgb(194, 192, 192);
+  padding-left: 5%;
+  border-radius: 5px;
+  
+}
+.in5_search{
+  padding-bottom: 10%;
+}
+.in5_search::placeholder{
+  font-size: 15px;
+  border-radius: 50px;
+}
+.dong1{
+  display: flex;
+  gap: 80px;
+}
+.int5_ct3{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: normal;
+}
+.in5_ct2 h5{
+  font-family:"Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.in5_ct4{
+
+  font-style: normal;
+  font-size: 15px;
+  font-weight: normal;
+}
+.in5_ct5{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: normal;
+}
+footer{
+  text-align: center;
+  padding: 20px;
+  background: rgb(248, 224, 104);
+  font-family:'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+.lastft p{
+  color: rgb(111, 110, 110);
+}
+/* check-menu */
+.check_menu{
+  color: black;
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: right;
+
+}
+
+/* reponsive */
+@media screen and (max-width: 768px){
+  .menu{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    
+
+  }
+  .check_menu{
+    display: block;
+  }
+  .menu{
+    /* display: none; */
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    
+  }
+  .logo{
+    display: none;
+  }
+
+}
